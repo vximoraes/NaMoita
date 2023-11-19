@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio | NaMoita</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+
+    <header>
+        <header>
+            <div class="pai">
+                <div class="menu">
+                    <aside id="menuOculto" class="menuOculto">
+                        <a href="javascript:void(0)" class="btnFechar" style="font-size:28px;cursor:pointer;"
+                            onclick="fecharMenu()">&#9776;</a>
+                        <a href="/Home/home.html">INÍCIO</a>
+                        <a href="/Ferramentas/ferramentas.html">FERRAMENTAS</a>
+                        <a href="/Portfólio/portfolio.html">PORTFÓLIO</a>
+                        <a href="/Contato/contato.html">CONTATO</a>
+                        <a href="/Sobre/sobre.html">SOBRE</a>
+                    </aside>
+                    <section id="principal">
+                        <span style="font-size:28px;cursor:pointer;" onclick="abrirMenu()">&#9776;</span>
+                    </section>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="gallery">
+                <img class="thumbnail" src="fotos/A.jpg" width="250" height="250" alt="A"
+                    onclick="openModal('fotos/A.jpg')">
+                <img class="thumbnail" src="fotos/arthur.png" width="250" height="250" alt="arthur"
+                    onclick="openModal('fotos/arthur.png')">
+                <img class="thumbnail" src="fotos/karneroprisao.png" width="250" height="250" alt="karneroprisao"
+                    onclick="openModal('fotos/karneroprisao.png')">
+                <img class="thumbnail" src="fotos/LOCURA---bitrus-watermark.jpg" width="250" height="250"
+                    alt="LOCURA---bitrus-watermark" onclick="openModal('fotos/LOCURA---bitrus-watermark.jpg')">
+                <img class="thumbnail" src="fotos/minekarnero.jpg" width="250" height="250" alt="minekarnero"
+                    onclick="openModal('fotos/minekarnero.jpg')">
+                <img class="thumbnail" src="fotos/o.jpg" width="250" height="250" alt="o"
+                    onclick="openModal('fotos/o.jpg')">
+                <img class="thumbnail" src="fotos/PABLO-TARTAS.jpg" width="250" height="250" alt="PABLO-TARTAS"
+                    onclick="openModal('fotos/PABLO-TARTAS.jpg')">
+                <img class="thumbnail" src="fotos/REVOLVE.jpg" width="250" height="250" alt="REVOLVE"
+                    onclick="openModal('fotos/REVOLVE.jpg')">
+                <img class="thumbnail" src="fotos/A.jpg" width="250" height="250" alt="A"
+                    onclick="openModal('fotos/A.jpg')">
+                <img class="thumbnail" src="fotos/arthur.png" width="250" height="250" alt="arthur"
+                    onclick="openModal('fotos/arthur.png')">
+                <img class="thumbnail" src="fotos/karneroprisao.png" width="250" height="250" alt="karneroprisao"
+                    onclick="openModal('fotos/karneroprisao.png')">
+                <img class="thumbnail" src="fotos/LOCURA---bitrus-watermark.jpg" width="250" height="250"
+                    alt="LOCURA---bitrus-watermark" onclick="openModal('fotos/LOCURA---bitrus-watermark.jpg')">
+                <img class="thumbnail" src="fotos/minekarnero.jpg" width="250" height="250" alt="minekarnero"
+                    onclick="openModal('fotos/minekarnero.jpg')">
+                <img class="thumbnail" src="fotos/o.jpg" width="250" height="250" alt="o"
+                    onclick="openModal('fotos/o.jpg')">
+                <img class="thumbnail" src="fotos/PABLO-TARTAS.jpg" width="250" height="250" alt="PABLO-TARTAS"
+                    onclick="openModal('fotos/PABLO-TARTAS.jpg')">
+                <img class="thumbnail" src="fotos/REVOLVE.jpg" width="250" height="250" alt="REVOLVE"
+                    onclick="openModal('fotos/REVOLVE.jpg')">
+                <img class="thumbnail" src="fotos/A.jpg" width="250" height="250" alt="A"
+                    onclick="openModal('fotos/A.jpg')">
+                <img class="thumbnail" src="fotos/arthur.png" width="250" height="250" alt="arthur"
+                    onclick="openModal('fotos/arthur.png')">
+                <img class="thumbnail" src="fotos/karneroprisao.png" width="250" height="250" alt="karneroprisao"
+                    onclick="openModal('fotos/karneroprisao.png')">
+                <img class="thumbnail" src="fotos/LOCURA---bitrus-watermark.jpg" width="250" height="250"
+                    alt="LOCURA---bitrus-watermark" onclick="openModal('fotos/LOCURA---bitrus-watermark.jpg')">
+                <img class="thumbnail" src="fotos/minekarnero.jpg" width="250" height="250" alt="minekarnero"
+                    onclick="openModal('fotos/minekarnero.jpg')">
+            </div>
+            <div class="modal" id="modal" onclick="closeModal()">
+                <div class="modal-content">
+                    <img class="modal-image" id="modalImage">
+                    <div class="modal-buttons">
+                        <button class="button-left" onclick="changeImage(-1); event.stopPropagation();">
+                            <</button> <button class="button-right" onclick="changeImage(1); event.stopPropagation();">>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            </div>
+            <h4 class="h4Footer">Todos os direitos reservados - NaMoita</h4>
+            </div>
+        </footer>
+</body>
+<script src="portfolio.js"></script>
+
+</html>
